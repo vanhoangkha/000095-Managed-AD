@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Deploy AWS Managed Directory Service :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1701092496" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092496" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092496" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092496" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092496" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092496" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092496" rel="stylesheet">
-    <link href="/css/theme.css?1701092496" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092496" rel="stylesheet">
+    <link href="/css/nucleus.css?1733819385" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733819385" rel="stylesheet">
+    <link href="/css/hybrid.css?1733819385" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733819385" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733819385" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733819385" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733819385" rel="stylesheet">
+    <link href="/css/theme.css?1733819385" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733819385" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092496" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733819385" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092496"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733819385"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092496"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092496"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733819385"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733819385"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092496"></script>
+<script type="text/javascript" src="/js/search.js?1733819385"></script>
 
     
   </div>
@@ -140,7 +140,7 @@
   
     
     <li data-nav-id="/2-prerequiste/2.1-deploy-aws-managed-ad/" title="Deploy AWS Managed Directory Service" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -417,7 +417,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -519,27 +519,27 @@
 <ol>
 <li>AWS Management Console =&gt; Search for Directory Service</li>
 <li>At AWS Directory Service management console =&gt; Set up directory
-<img src="/images/setup-ad-1.jpg" alt="setup directory"></li>
+<img alt="setup directory" src="/images/setup-ad-1.jpg"></li>
 <li>Choose AWS Managed Microsoft AD =&gt; Next
-<img src="/images/setup-ad-2.jpg" alt="setup directory"></li>
+<img alt="setup directory" src="/images/setup-ad-2.jpg"></li>
 <li>Depends on your business needs. Manually choose the right Directory Service. For this lab purpose, choose Standard Edition</li>
 <li>Then, fill in all of required information: Fully Qualified Domain Name (FQDN), NetBios Name, Description (optional), password
 <ul>
 <li>By default, the AWS Managed AD account is Admin (case sensitive)</li>
 <li>Do not worry about the price, the lab last long 2~4hrs. Do not cost too much. However, remember to delete the resources included this Directory Service after completed the lab
-<img src="/images/setup-ad-3.jpg" alt="setup directory">
-<img src="/images/setup-ad-3-a.jpg" alt="setup directory"></li>
+<img alt="setup directory" src="/images/setup-ad-3.jpg">
+<img alt="setup directory" src="/images/setup-ad-3-a.jpg"></li>
 </ul>
 </li>
 <li>Then click Next</li>
 <li>Choose the right VPC and Subnet. Remember, at least 2 subnet in 2 different availability zone (az).</li>
 <li>Must be private subnet for security best practices. Then click NEXT
-<img src="/images/setup-ad-4.jpg" alt="setup directory"></li>
+<img alt="setup directory" src="/images/setup-ad-4.jpg"></li>
 <li>Double check all of the required information =&gt; Create Directory
-<img src="/images/setup-ad-5.jpg" alt="setup directory"></li>
+<img alt="setup directory" src="/images/setup-ad-5.jpg"></li>
 <li>The directory creation might take a bit long, roundly 40 minutes.</li>
 <li>After finished, we will see our directory has been created
-<img src="/images/setup-ad-6.jpg" alt="setup directory"></li>
+<img alt="setup directory" src="/images/setup-ad-6.jpg"></li>
 <li>We are done for setting up AWS Managed AD</li>
 </ol>
 
@@ -755,19 +755,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092496"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092496"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092496"></script>
-    <script src="/js/jquery.sticky.js?1701092496"></script>
-    <script src="/js/featherlight.min.js?1701092496"></script>
-    <script src="/js/highlight.pack.js?1701092496"></script>
+    <script src="/js/clipboard.min.js?1733819385"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733819385"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733819385"></script>
+    <script src="/js/jquery.sticky.js?1733819385"></script>
+    <script src="/js/featherlight.min.js?1733819385"></script>
+    <script src="/js/highlight.pack.js?1733819385"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092496"></script>
-    <script src="/js/learn.js?1701092496"></script>
-    <script src="/js/hugo-learn.js?1701092496"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733819385"></script>
+    <script src="/js/learn.js?1733819385"></script>
+    <script src="/js/hugo-learn.js?1733819385"></script>
 
-    <link href="/mermaid/mermaid.css?1701092496" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092496"></script>
+    <link href="/mermaid/mermaid.css?1733819385" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733819385"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

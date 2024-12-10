@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>EC2 Configuration :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1701092496" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092496" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092496" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092496" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092496" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092496" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092496" rel="stylesheet">
-    <link href="/css/theme.css?1701092496" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092496" rel="stylesheet">
+    <link href="/css/nucleus.css?1733819385" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733819385" rel="stylesheet">
+    <link href="/css/hybrid.css?1733819385" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733819385" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733819385" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733819385" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733819385" rel="stylesheet">
+    <link href="/css/theme.css?1733819385" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733819385" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092496" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733819385" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092496"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733819385"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092496"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092496"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733819385"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733819385"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092496"></script>
+<script type="text/javascript" src="/js/search.js?1733819385"></script>
 
     
   </div>
@@ -262,7 +262,7 @@
   
     
     <li data-nav-id="/3-configure-ec2/3.2-ec2-configuration/" title="EC2 Configuration" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -417,7 +417,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -510,27 +510,27 @@
 	<p><strong>EC2 Configuration</strong></p>
 <ol>
 <li>Navigate to the AWS Directory Service management console =&gt; choose the created Directory Service =&gt; save the DNS Address
-<img src="/images/ec2-confg-2.jpg" alt="ec2-config"></li>
+<img alt="ec2-config" src="/images/ec2-confg-2.jpg"></li>
 <li>Navigate to the EC2 Management Console =&gt; save ALL of the both public and private ip address of ALL EC2
-<img src="/images/ec2-confg-3.jpg" alt="ec2-config"></li>
+<img alt="ec2-config" src="/images/ec2-confg-3.jpg"></li>
 <li>We will have a temporary notepad file like this<br>
-<img src="/images/ec2-confg-4.jpg" alt="ec2-config"></li>
+<img alt="ec2-config" src="/images/ec2-confg-4.jpg"></li>
 <li>Edit your hosts file on ALL EC2. Remember, before edit the host file, you need to grand the permission so the that file can be saved. Host file is located at <strong>C:\Windows\System32\drivers\etc</strong>
-<img src="/images/ec2-confg-4a.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-4b.jpg" alt="ec2-config"></li>
+<img alt="ec2-config" src="/images/ec2-confg-4a.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-4b.jpg"></li>
 <li>The hosts file of all EC2 should look something like this
-<img src="/images/ec2-confg-5.jpg" alt="ec2-config"></li>
+<img alt="ec2-config" src="/images/ec2-confg-5.jpg"></li>
 <li>On ALL EC2. CMD =&gt; ipconfig /all to check the ip address. Then, configure the IP address so that matched with the what showed in the command line on EACH EC2. Because of we have already joined into the domain at the creating EC2 step. Then, the DNS will be pre-filled so that matched with our created AWS Managed Directory Service
-<img src="/images/ec2-confg-6.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-6a.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-6b.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-6c.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-6d.jpg" alt="ec2-config"></li>
-<li>At AD-Manager EC2 =&gt; Server Management =&gt; Add Roles and Features. After chose all the neccessary options =&gt; NEXT =&gt; Install =&gt; it might take 2 minutes 
-<img src="/images/ec2-confg-7.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-7a.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-7b.jpg" alt="ec2-config">
-<img src="/images/ec2-confg-7c.jpg" alt="ec2-config"></li>
+<img alt="ec2-config" src="/images/ec2-confg-6.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-6a.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-6b.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-6c.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-6d.jpg"></li>
+<li>At AD-Manager EC2 =&gt; Server Management =&gt; Add Roles and Features. After chose all the neccessary options =&gt; NEXT =&gt; Install =&gt; it might take 2 minutes
+<img alt="ec2-config" src="/images/ec2-confg-7.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-7a.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-7b.jpg">
+<img alt="ec2-config" src="/images/ec2-confg-7c.jpg"></li>
 <li>Restart ALL EC2</li>
 <li>After restarted, login again and check ping in every server</li>
 </ol>
@@ -750,19 +750,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092496"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092496"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092496"></script>
-    <script src="/js/jquery.sticky.js?1701092496"></script>
-    <script src="/js/featherlight.min.js?1701092496"></script>
-    <script src="/js/highlight.pack.js?1701092496"></script>
+    <script src="/js/clipboard.min.js?1733819385"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733819385"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733819385"></script>
+    <script src="/js/jquery.sticky.js?1733819385"></script>
+    <script src="/js/featherlight.min.js?1733819385"></script>
+    <script src="/js/highlight.pack.js?1733819385"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092496"></script>
-    <script src="/js/learn.js?1701092496"></script>
-    <script src="/js/hugo-learn.js?1701092496"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733819385"></script>
+    <script src="/js/learn.js?1733819385"></script>
+    <script src="/js/hugo-learn.js?1733819385"></script>
 
-    <link href="/mermaid/mermaid.css?1701092496" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092496"></script>
+    <link href="/mermaid/mermaid.css?1733819385" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733819385"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

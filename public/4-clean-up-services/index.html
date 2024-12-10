@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Clean Up Services :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1701092496" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092496" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092496" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092496" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092496" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092496" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092496" rel="stylesheet">
-    <link href="/css/theme.css?1701092496" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092496" rel="stylesheet">
+    <link href="/css/nucleus.css?1733819385" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733819385" rel="stylesheet">
+    <link href="/css/hybrid.css?1733819385" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733819385" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733819385" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733819385" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733819385" rel="stylesheet">
+    <link href="/css/theme.css?1733819385" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733819385" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092496" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733819385" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092496"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733819385"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092496"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092496"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733819385"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733819385"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092496"></script>
+<script type="text/javascript" src="/js/search.js?1733819385"></script>
 
     
   </div>
@@ -325,7 +325,7 @@
   
     
     <li data-nav-id="/4-clean-up-services/" title="Clean Up Services" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -417,7 +417,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -504,12 +504,12 @@
 	<p>After finished all the parts of this lab. We will need to clean up the resources to avoid unexpected charge from AWS</p>
 <hr>
 <p><strong>1. Clean Up AWS Managed Active Directory</strong>
-<img src="/images/clean-1.jpg" alt="clean-up-resources">
-<img src="/images/clean-2.jpg" alt="clean-up-resources"></p>
+<img alt="clean-up-resources" src="/images/clean-1.jpg">
+<img alt="clean-up-resources" src="/images/clean-2.jpg"></p>
 <p><strong>2. Clean Up EC2</strong>
-<img src="/images/clean-3.jpg" alt="clean-up-resources">
-<img src="/images/clean-4.jpg" alt="clean-up-resources">
-<img src="/images/clean-5.jpg" alt="clean-up-resources"></p>
+<img alt="clean-up-resources" src="/images/clean-3.jpg">
+<img alt="clean-up-resources" src="/images/clean-4.jpg">
+<img alt="clean-up-resources" src="/images/clean-5.jpg"></p>
 <p><strong>3. Clean Up Security Group:</strong><br>
 - To be able to make all the service connectable, we did trust the Security Group Inbound Rule for both VPC-SG and d_Controller-SG (prefer to the basic guide)<br>
 - To be able to delete, we need to untrust (delete) those rule so that there is not any related-rule in a single security group<br>
@@ -517,25 +517,25 @@
 ==&gt; 1. To find the corresponded the security group id with the one we want to delete =&gt; Delete =&gt; Save<br>
 ==&gt; 2. Delete all the presneted rule =&gt; Save<br>
 - Do for <strong>ALL</strong> security groups<br>
-<img src="/images/clean-6.jpg" alt="clean-up-resources">
-<img src="/images/clean-7.jpg" alt="clean-up-resources">
-<img src="/images/clean-8.jpg" alt="clean-up-resources"></p>
+<img alt="clean-up-resources" src="/images/clean-6.jpg">
+<img alt="clean-up-resources" src="/images/clean-7.jpg">
+<img alt="clean-up-resources" src="/images/clean-8.jpg"></p>
 <p><strong>4. Delete NAT Gateway</strong>
-<img src="/images/clean-9.jpg" alt="clean-up-resources">
-<img src="/images/clean-10.jpg" alt="clean-up-resources">
-<img src="/images/clean-11.jpg" alt="clean-up-resources"></p>
+<img alt="clean-up-resources" src="/images/clean-9.jpg">
+<img alt="clean-up-resources" src="/images/clean-10.jpg">
+<img alt="clean-up-resources" src="/images/clean-11.jpg"></p>
 <p><strong>5. Delete Internet Gateway</strong>
-<img src="/images/clean-12.jpg" alt="clean-up-resources">
-<img src="/images/clean-13.jpg" alt="clean-up-resources">
-<img src="/images/clean-14.jpg" alt="clean-up-resources">
-<img src="/images/clean-15.jpg" alt="clean-up-resources"></p>
+<img alt="clean-up-resources" src="/images/clean-12.jpg">
+<img alt="clean-up-resources" src="/images/clean-13.jpg">
+<img alt="clean-up-resources" src="/images/clean-14.jpg">
+<img alt="clean-up-resources" src="/images/clean-15.jpg"></p>
 <p><strong>6. Delete VPC</strong>
-<img src="/images/clean-16.jpg" alt="clean-up-resources">
-<img src="/images/clean-17.jpg" alt="clean-up-resources"></p>
+<img alt="clean-up-resources" src="/images/clean-16.jpg">
+<img alt="clean-up-resources" src="/images/clean-17.jpg"></p>
 <p><strong>7. Delete Elastic IP</strong><br>
 If you left the Elastic IP un-used. You will be charged for the IP service. Hence, remember to delete all of Elastic IP if you did not need them.<br>
-<img src="/images/clean-18.jpg" alt="clean-up-resources">
-<img src="/images/clean-19.jpg" alt="clean-up-resources"></p>
+<img alt="clean-up-resources" src="/images/clean-18.jpg">
+<img alt="clean-up-resources" src="/images/clean-19.jpg"></p>
 
 
 
@@ -745,19 +745,19 @@ If you left the Elastic IP un-used. You will be charged for the IP service. Henc
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092496"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092496"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092496"></script>
-    <script src="/js/jquery.sticky.js?1701092496"></script>
-    <script src="/js/featherlight.min.js?1701092496"></script>
-    <script src="/js/highlight.pack.js?1701092496"></script>
+    <script src="/js/clipboard.min.js?1733819385"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733819385"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733819385"></script>
+    <script src="/js/jquery.sticky.js?1733819385"></script>
+    <script src="/js/featherlight.min.js?1733819385"></script>
+    <script src="/js/highlight.pack.js?1733819385"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092496"></script>
-    <script src="/js/learn.js?1701092496"></script>
-    <script src="/js/hugo-learn.js?1701092496"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733819385"></script>
+    <script src="/js/learn.js?1733819385"></script>
+    <script src="/js/hugo-learn.js?1733819385"></script>
 
-    <link href="/mermaid/mermaid.css?1701092496" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092496"></script>
+    <link href="/mermaid/mermaid.css?1733819385" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733819385"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
