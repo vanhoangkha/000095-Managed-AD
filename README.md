@@ -22,7 +22,7 @@ This lab will help you out about how to deploy AWS Managed Directory Service as 
    - Edit Computer Name (Optional)
    - EC2 Configuration
    - Testing Servers Communication
-4. Clean Up Services
+4. Clean up resources
 
 ## Prerequisites
 
